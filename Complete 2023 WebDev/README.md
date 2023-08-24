@@ -2,11 +2,11 @@
 
 ## VS Code Extensions:
 
-1. Live Preview
++ Live Preview
 
-2. Prettier
++ Prettier
 
-3. vscode-icons
++ vscode-icons
 
 ## Links
 + https://www.diffchecker.com/
