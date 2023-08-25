@@ -70,3 +70,106 @@ h1.class {attribute: value;}
 2. Relative Positioning
 3. Absolute Positioning
 4. Fixed Positioning
+
+### Displays
++ display: inline-block;
++ display: block
+
+### CSS Float
+
+Wrapping text using float and clear
+```css
+img {float: left; }
+footer{clear: left; }
+```
+### Responsive Web Design
++ Media Query
+```css
+@media (max-width: 600px){
+    h1 {
+        font-size: 15px;
+    }
+}
+/* CSS for screens below or equal to 600px wide*/
+```
+
++ CSS Grid
+```html
+<div class = "grid-container">
+    <div class = "first card"></div>
+    <div class = "card"></div>
+</div>
+```
+```css
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 200px 200px;
+    gap: 30px;
+}
+.first {grid-column: span 2;}
+.card {background-color: blue;}
+
+```
++ CSS FlexBox
+
+```html
+<div class = "flex-container">
+    <div class = "first card"></div>
+    <div class = "second card"></div>
+</div>
+```
+```css
+.flex-container {
+    display: flex;
+}
+.card {background-color: blue; flex:1}
+.first {flex: 2;}
+.second{background-color: blue; flex:0.5}
+```
++ Bootstrap Framework
+```html
+<div class = "container">
+    <div class = "row">
+        <div class = "card col-6"></div>
+    </div>
+    
+</div>
+```
+```css
+.flex-container {
+    display: flex;
+}
+.card {background-color: blue; flex:1}
+.first {flex: 2;}
+.second{background-color: blue; flex:0.5}
+```
+
+### Media Queries
+Examples:
+```css
+@media (min-width: 600px) and (max-width: 900px){
+    /* Styles for screens between 600px and 900px */
+}
+```
+```css
+@media screen(orientation: landscape){
+    /* Styles for lanscape orientation */
+}
+```
+
+### CSS FlexBox
+```html
+<div class="container">
+ <div class="one"></div>
+ <div class="two"></div>
+</div>
+```
+```css
+.container {
+    display: flex;
+    gap: 10px;
+}
+```
+
++ https://css-tricks.com/snippets/css/a-guide-to-flexbox/
