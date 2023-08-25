@@ -11,6 +11,7 @@
 ## Links
 + https://www.diffchecker.com/
 + colorhunt.co
++ pesticide in chrome
 
 ## Notes
 boiler plate in vscode: <br>
@@ -43,4 +44,29 @@ boiler plate in vscode: <br>
 + Chrome tool-> ...(more tools)->CSS overview->Capture overview
 
 ### Combining selectors
-1. 
+1. Group selector:<br>
+```
+selector1, selector2 {attribute: value;}
+```
+2. Child Selector:<br>
+```
+selector1 > selector2 {attribute: value;}
+```
+3. Descendant Selector <br>
+Apply to descendant to the left
+```
+selector_ancestor selector_descendant {attribute: value;}
+```
+4. Chaining Selector <br>
+Apply where ALL selectors are true
+```
+selector1selector {attribute: value;}
+h1.class {attribute: value;}
+```
+
+### CSS Positioning
+
+1. Static Positioning
+2. Relative Positioning
+3. Absolute Positioning
+4. Fixed Positioning
